@@ -2,7 +2,7 @@
 
 This plugin will first determine if a repo has changes to relevant files before versioning and publishing these files to an Eik server.
 
-It can be used as part of an existing Semantic Release workflow or as a stand alone setup.
+N.B. Currently, this plugin expects that your Eik project uses an `eik.json` file (rather than configuration in `package.json`)
 
 ## Setup
 
@@ -34,6 +34,8 @@ module.exports = {
 ```
 
 ## Plugin Environment Variables
+
+This plugin expects the following environment variable to be present.
 
 | Name      | Description                 |
 | --------- | --------------------------- |
