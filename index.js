@@ -4,6 +4,7 @@ const eik = require("@eik/cli");
 const common = require("@eik/common");
 const json = require("@eik/cli/utils/json");
 const verifyConditions = require("./lib/verify-conditions");
+const analyzeCommits = require("./lib/analyze-commits");
 
 class State {
   eikToken = "";
@@ -17,63 +18,8 @@ const state = new State();
 module.exports.verifyConditions = (options, context) =>
   verifyConditions(options, context, state);
 
-module.exports.analyzeCommits = async function analyzeCommits(
-  options,
-  context
-) {
-  const { cwd, logger } = context;
-  const {
-    version: currentVersion,
-    server,
-    type,
-    name,
-    files,
-    map,
-    out,
-  } = state.eikJSON;
-
-  try {
-    state.versionToPublish = await eik.version({
-      name,
-      version: currentVersion,
-      type,
-      files,
-      server,
-      cwd,
-      level: options.level,
-      map,
-      out,
-    });
-    logger.log(
-      `Eik version updated from v${currentVersion} to v${state.versionToPublish}.`
-    );
-    state.publishNeeded = true;
-    return options.level || "patch";
-  } catch (err) {
-    logger.log(err.message);
-  }
-
-  const url = new URL(
-    join(common.helpers.typeSlug(type), name, currentVersion),
-    server
-  );
-  url.searchParams.set("ts", Date.now());
-  const result = await fetch(url);
-  if (result.ok) {
-    state.publishNeeded = false;
-    logger.log(
-      `The current version of this package is already published. Publishing is not needed.`
-    );
-    return null;
-  }
-
-  state.publishNeeded = true;
-  state.versionToPublish = currentVersion;
-  logger.log(
-    `Current Eik version not yet published. Versioning change is not needed.`
-  );
-  return options.level || "patch";
-};
+module.exports.analyzeCommits = (options, context) =>
+  analyzeCommits(options, context, state);
 
 module.exports.verifyRelease = async function verifyRelease(options, context) {
   if (!state.publishNeeded) return;
