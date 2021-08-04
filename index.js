@@ -1,12 +1,12 @@
 const { join } = require("path");
 const fetch = require("node-fetch");
-const eik = require("@eik/cli");
 const common = require("@eik/common");
 const verifyConditions = require("./lib/verify-conditions");
 const analyzeCommits = require("./lib/analyze-commits");
 const verifyRelease = require("./lib/verify-release");
 const generateNotes = require("./lib/generate-notes");
 const prepare = require("./lib/prepare");
+const publish = require("./lib/publish");
 
 class State {
   eikToken = "";
@@ -31,35 +31,7 @@ module.exports.generateNotes = (options, context) =>
 
 module.exports.prepare = (options, context) => prepare(options, context, state);
 
-module.exports.publish = async function publish(options, context) {
-  if (!state.publishNeeded) return;
-  const { cwd, logger } = context;
-  try {
-    const { server, name, files, type, map, out } = state.eikJSON;
-    const result = await eik.publish({
-      name,
-      type,
-      server,
-      files,
-      cwd,
-      token: state.eikToken,
-      dryRun: false,
-      version: state.versionToPublish,
-      map,
-      out,
-    });
-
-    const filesPublished = result.files.filter((file) => file.type === "pkg");
-    logger.log(
-      `Published ${filesPublished.length} file(s) to Eik server ${state.eikJSON.server}`
-    );
-  } catch (err) {
-    logger.log(
-      "Publish to Eik server failed. This may leave your build in a broken state. If retrying the build fails, try pushing a new commit."
-    );
-    throw err;
-  }
-};
+module.exports.publish = (options, context) => publish(options, context, state);
 
 module.exports.success = async function success(options, context) {
   if (!state.publishNeeded) return;
