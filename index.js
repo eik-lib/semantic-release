@@ -15,20 +15,12 @@ class State {
 
 const state = new State();
 
-module.exports.verifyConditions = (options, context) =>
-  verifyConditions(options, context, state);
-
-module.exports.analyzeCommits = (options, context) =>
-  analyzeCommits(options, context, state);
-
-module.exports.verifyRelease = (options, context) =>
-  verifyRelease(options, context, state);
-
-module.exports.generateNotes = (options, context) =>
-  generateNotes(options, context, state);
-
-module.exports.prepare = (options, context) => prepare(options, context, state);
-
-module.exports.publish = (options, context) => publish(options, context, state);
-
-module.exports.success = (options, context) => success(options, context, state);
+module.exports = {
+  verifyConditions: (options, ctx) => verifyConditions(options, ctx, state),
+  analyzeCommits: (options, ctx) => analyzeCommits(options, ctx, state),
+  verifyRelease: (options, ctx) => verifyRelease(options, ctx, state),
+  generateNotes: (options, ctx) => generateNotes(options, ctx, state),
+  prepare: (options, ctx) => prepare(options, ctx, state),
+  publish: (options, ctx) => publish(options, ctx, state),
+  success: (options, ctx) => success(options, ctx, state),
+};
