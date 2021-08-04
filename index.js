@@ -5,6 +5,7 @@ const common = require("@eik/common");
 const json = require("@eik/cli/utils/json");
 const verifyConditions = require("./lib/verify-conditions");
 const analyzeCommits = require("./lib/analyze-commits");
+const verifyRelease = require("./lib/verify-release");
 
 class State {
   eikToken = "";
@@ -21,39 +22,8 @@ module.exports.verifyConditions = (options, context) =>
 module.exports.analyzeCommits = (options, context) =>
   analyzeCommits(options, context, state);
 
-module.exports.verifyRelease = async function verifyRelease(options, context) {
-  if (!state.publishNeeded) return;
-  const { cwd, logger } = context;
-
-  try {
-    const { server, name, files, type, map, out } = state.eikJSON;
-    const result = await eik.publish({
-      name,
-      type,
-      server,
-      files,
-      cwd,
-      token: state.eikToken,
-      dryRun: true,
-      version: state.versionToPublish,
-      map,
-      out,
-    });
-
-    const filesToBePublished = result.files.filter(
-      (file) => file.type === "package file"
-    );
-    if (!filesToBePublished.length) {
-      throw new Error(
-        `No files detected for upload. Did you run bundling first (if needed)? Is the "files" field of eik.json correct?`
-      );
-    }
-    logger.log("Found %d file(s) to publish", filesToBePublished.length);
-  } catch (err) {
-    logger.log("Verification checks failed to complete");
-    throw err;
-  }
-};
+module.exports.verifyRelease = (options, context) =>
+  verifyRelease(options, context, state);
 
 module.exports.generateNotes = async function generateNotes() {
   if (!state.publishNeeded) return;
