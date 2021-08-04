@@ -2,11 +2,11 @@ const { join } = require("path");
 const fetch = require("node-fetch");
 const eik = require("@eik/cli");
 const common = require("@eik/common");
-const json = require("@eik/cli/utils/json");
 const verifyConditions = require("./lib/verify-conditions");
 const analyzeCommits = require("./lib/analyze-commits");
 const verifyRelease = require("./lib/verify-release");
 const generateNotes = require("./lib/generate-notes");
+const prepare = require("./lib/prepare");
 
 class State {
   eikToken = "";
@@ -29,14 +29,7 @@ module.exports.verifyRelease = (options, context) =>
 module.exports.generateNotes = (options, context) =>
   generateNotes(options, context, state);
 
-module.exports.prepare = async function prepare(options, context) {
-  if (!state.publishNeeded) return;
-  const { cwd, logger } = context;
-  if (state.eikJSON.version !== state.versionToPublish) {
-    logger.log(`Version ${state.versionToPublish} written to eik.json`);
-    await json.writeEik({ version: state.versionToPublish }, { cwd });
-  }
-};
+module.exports.prepare = (options, context) => prepare(options, context, state);
 
 module.exports.publish = async function publish(options, context) {
   if (!state.publishNeeded) return;
