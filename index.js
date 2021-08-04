@@ -6,6 +6,7 @@ const json = require("@eik/cli/utils/json");
 const verifyConditions = require("./lib/verify-conditions");
 const analyzeCommits = require("./lib/analyze-commits");
 const verifyRelease = require("./lib/verify-release");
+const generateNotes = require("./lib/generate-notes");
 
 class State {
   eikToken = "";
@@ -25,10 +26,8 @@ module.exports.analyzeCommits = (options, context) =>
 module.exports.verifyRelease = (options, context) =>
   verifyRelease(options, context, state);
 
-module.exports.generateNotes = async function generateNotes() {
-  if (!state.publishNeeded) return;
-  return `New Eik package version ${state.versionToPublish} published.`;
-};
+module.exports.generateNotes = (options, context) =>
+  generateNotes(options, context, state);
 
 module.exports.prepare = async function prepare(options, context) {
   if (!state.publishNeeded) return;
