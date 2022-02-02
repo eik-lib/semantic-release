@@ -16,7 +16,7 @@
     "@eik/cli": "^2.0.0-next.6",
     "@eik/common": "^4.0.0-next.4",
     "aggregate-error": "^3.0.0",
-    "execa": "^5.1.1",
+    "execa": "^6.0.0",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
