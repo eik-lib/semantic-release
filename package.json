@@ -15,7 +15,8 @@
   "license": "MIT",
   "dependencies": {
     "@eik/cli": "^2.0.0-next.6",
-    "@eik/common": "^4.0.0-next.4",
+    "@eik/common-config-loader": "^0.0.1-next.2",
+    "@eik/common-utils": "^0.0.1-next.1",
     "aggregate-error": "^3.0.0",
     "execa": "^5.1.1",
     "node-fetch": "^2.6.1"
