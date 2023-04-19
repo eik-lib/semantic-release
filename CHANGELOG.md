@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/eik-lib/semantic-release/compare/v1.0.0...v1.0.1) (2023-04-19)
+
+
+### Bug Fixes
+
+* replace broken usage of old eik common module ([72473fa](https://github.com/eik-lib/semantic-release/commit/72473faa54daf03ebc08f51e164f3860a83b829e))
+
 # 1.0.0 (2021-08-05)
 
 
