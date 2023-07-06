@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/eik-lib/semantic-release/compare/v1.0.2...v1.0.3) (2023-07-06)
+
+
+### Bug Fixes
+
+* Fix broken deps ([7381a97](https://github.com/eik-lib/semantic-release/commit/7381a97f2813d3582f9b32def1163d50e0f99837))
+
 ## [1.0.2](https://github.com/eik-lib/semantic-release/compare/v1.0.1...v1.0.2) (2023-06-28)
 
 
