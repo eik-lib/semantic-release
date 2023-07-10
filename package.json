@@ -1,6 +1,6 @@
 {
   "name": "@eik/semantic-release",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Semantic release plugin for Eik",
   "main": "lib/main.js",
   "scripts": {
