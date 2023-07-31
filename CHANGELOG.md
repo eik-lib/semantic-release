@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/eik-lib/semantic-release/compare/v1.0.4...v1.0.5) (2023-07-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency execa to v7.2.0 ([19d56db](https://github.com/eik-lib/semantic-release/commit/19d56dbdc6105be441bb5a5d96f2a70856606be9))
+
 ## [1.0.4](https://github.com/eik-lib/semantic-release/compare/v1.0.3...v1.0.4) (2023-07-10)
 
 
