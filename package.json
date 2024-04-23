@@ -17,7 +17,7 @@
     "@eik/cli": "^2.0.34",
     "@eik/common-config-loader": "^4.0.0-next.12",
     "@eik/common-utils": "^4.0.0-next.12",
-    "aggregate-error": "3.1.0",
+    "aggregate-error": "5.0.0",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
