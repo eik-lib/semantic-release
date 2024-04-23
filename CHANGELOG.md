@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/eik-lib/semantic-release/compare/v1.0.5...v1.0.6) (2024-04-23)
+
+
+### Bug Fixes
+
+* update to stable eik/cli ([#41](https://github.com/eik-lib/semantic-release/issues/41)) ([3002398](https://github.com/eik-lib/semantic-release/commit/300239882707aac4e8e1754abbb73aa00dfeb5fd))
+
 ## [1.0.5](https://github.com/eik-lib/semantic-release/compare/v1.0.4...v1.0.5) (2023-07-31)
 
 
