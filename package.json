@@ -4,8 +4,7 @@
   "description": "Semantic release plugin for Eik",
   "main": "lib/main.js",
   "scripts": {
-    "test": "tap --no-check-coverage",
-    "test:snapshots:update": "tap --snapshot"
+    "test": "tap --disable-coverage --allow-empty-coverage"
   },
   "publishConfig": {
     "access": "public"
@@ -14,7 +13,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@eik/cli": "^2.0.34",
+    "@eik/cli": "^2.0.35",
     "@eik/common-config-loader": "^4.0.0-next.12",
     "@eik/common-utils": "^4.0.0-next.12",
     "aggregate-error": "3.1.0",
@@ -24,6 +23,6 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "semantic-release": "21.1.2",
-    "tap": "16.3.10"
+    "tap": "18.7.2"
   }
 }
