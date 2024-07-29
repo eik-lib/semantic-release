@@ -1,3 +1,22 @@
+# [2.0.0](https://github.com/eik-lib/semantic-release/compare/v1.0.7...v2.0.0) (2024-07-29)
+
+
+### Bug Fixes
+
+* update dependencies ([4af25ea](https://github.com/eik-lib/semantic-release/commit/4af25ea824f17a11ac145d41e8a9d8c45ee73ff6))
+
+
+### Code Refactoring
+
+* rewrite to ESM ([fc473a7](https://github.com/eik-lib/semantic-release/commit/fc473a704b57ee5c05677160ae31bcd360d60486))
+
+
+### BREAKING CHANGES
+
+* this module is now esm
+* drops node-fetch for the built-in fetch,
+which means Node 18 or newer is required.
+
 ## [1.0.7](https://github.com/eik-lib/semantic-release/compare/v1.0.6...v1.0.7) (2024-04-23)
 
 
