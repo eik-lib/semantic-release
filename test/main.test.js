@@ -1,7 +1,5 @@
-'use strict';
-
-const plugin = require('../lib/main.js');
-const tap = require('tap');
+import tap from 'tap';
+import plugin from '../lib/main.js';
 
 tap.test('Simple test', (t) => {
     t.type(plugin.verifyConditions, 'function');
