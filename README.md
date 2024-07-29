@@ -25,11 +25,11 @@ npm install -D @eik/semantic-release @semantic-release/git
 3. Create/edit `release.config.js` file to load plugins
 
 ```js
-module.exports = {
-  plugins: [
-    "@eik/semantic-release",
-    ["@semantic-release/git", { assets: ["eik.json"] }],
-  ],
+export default {
+    plugins: [
+        '@eik/semantic-release',
+        ['@semantic-release/git', { assets: ['eik.json'] }],
+    ],
 };
 ```
 
