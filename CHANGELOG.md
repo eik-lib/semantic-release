@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/eik-lib/semantic-release/compare/v2.0.0...v2.0.1) (2024-08-09)
+
+
+### Bug Fixes
+
+* include type definitions ([153e25d](https://github.com/eik-lib/semantic-release/commit/153e25d3e3bb6484b6b08b2061fee96db1da3c9f))
+
 # [2.0.0](https://github.com/eik-lib/semantic-release/compare/v1.0.7...v2.0.0) (2024-07-29)
 
 
