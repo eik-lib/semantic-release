@@ -25,7 +25,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@eik/cli": "2.0.39",
+    "@eik/cli": "3.1.21",
     "@eik/common": "5.1.6",
     "aggregate-error": "5.0.0"
   },
@@ -34,6 +34,7 @@
     "@eik/prettier-config": "1.0.1",
     "@eik/semantic-release-config": "1.0.5",
     "@eik/typescript-config": "1.0.0",
+    "@types/node": "24.3.1",
     "eslint": "9.25.1",
     "npm-run-all2": "5.0.2",
     "prettier": "3.4.2",
