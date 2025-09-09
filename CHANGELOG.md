@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/eik-lib/semantic-release/compare/v2.0.2...v3.0.0) (2025-09-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eik/common to v5 ([#59](https://github.com/eik-lib/semantic-release/issues/59)) ([b473cb8](https://github.com/eik-lib/semantic-release/commit/b473cb82b8262226bcd29566dd85a31804b72264))
+
+
+### BREAKING CHANGES
+
+* **deps:** Minimum Node version is now 22
+
 ## [2.0.2](https://github.com/eik-lib/semantic-release/compare/v2.0.1...v2.0.2) (2024-08-19)
 
 
