@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/eik-lib/semantic-release/compare/v3.0.2...v3.0.3) (2025-12-12)
+
+
+### Bug Fixes
+
+* update eik dependencies ([cf32c61](https://github.com/eik-lib/semantic-release/commit/cf32c61d559d76193133653c3ac45a0b177b9a14))
+
 ## [3.0.2](https://github.com/eik-lib/semantic-release/compare/v3.0.1...v3.0.2) (2025-09-15)
 
 
