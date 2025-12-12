@@ -25,22 +25,22 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@eik/cli": "3.1.21",
-    "@eik/common": "5.1.7",
+    "@eik/cli": "3.1.30",
+    "@eik/common": "5.1.11",
     "aggregate-error": "5.0.0"
   },
   "devDependencies": {
-    "@eik/eslint-config": "1.0.18",
+    "@eik/eslint-config": "1.0.23",
     "@eik/prettier-config": "1.0.1",
-    "@eik/semantic-release-config": "1.0.5",
+    "@eik/semantic-release-config": "1.0.10",
     "@eik/typescript-config": "1.0.0",
     "@types/node": "24.3.1",
-    "eslint": "9.25.1",
-    "npm-run-all2": "5.0.2",
-    "prettier": "3.4.2",
-    "rimraf": "6.0.1",
-    "semantic-release": "24.2.3",
-    "tap": "21.0.1",
-    "typescript": "5.7.2"
+    "eslint": "9.39.1",
+    "npm-run-all2": "8.0.4",
+    "prettier": "3.7.4",
+    "rimraf": "6.1.2",
+    "semantic-release": "25.0.2",
+    "tap": "21.5.0",
+    "typescript": "5.9.3"
   }
 }
