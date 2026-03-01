@@ -35,7 +35,7 @@
     "@eik/semantic-release-config": "1.0.14",
     "@eik/typescript-config": "1.0.0",
     "@types/node": "24.3.1",
-    "eslint": "9.39.1",
+    "eslint": "9.39.3",
     "npm-run-all2": "8.0.4",
     "prettier": "3.7.4",
     "rimraf": "6.1.2",
