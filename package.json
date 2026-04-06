@@ -26,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "@eik/cli": "3.1.45",
-    "@eik/common": "5.1.22",
+    "@eik/common": "5.1.23",
     "aggregate-error": "5.0.0"
   },
   "devDependencies": {
