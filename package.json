@@ -25,7 +25,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@eik/cli": "3.1.48",
+    "@eik/cli": "3.1.53",
     "@eik/common": "5.1.27",
     "aggregate-error": "5.0.0"
   },
