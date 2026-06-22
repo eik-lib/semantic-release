@@ -1,3 +1,10 @@
+## [3.0.27](https://github.com/eik-lib/semantic-release/compare/v3.0.26...v3.0.27) (2026-06-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eik/cli to v3.1.58 ([#126](https://github.com/eik-lib/semantic-release/issues/126)) ([efd56bf](https://github.com/eik-lib/semantic-release/commit/efd56bf6ea8e83b04cc8c0be114f10a3ed95d23c))
+
 ## [3.0.26](https://github.com/eik-lib/semantic-release/compare/v3.0.25...v3.0.26) (2026-06-22)
 
 
