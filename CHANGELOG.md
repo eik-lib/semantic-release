@@ -1,3 +1,10 @@
+## [3.0.26](https://github.com/eik-lib/semantic-release/compare/v3.0.25...v3.0.26) (2026-06-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @eik/common to v5.1.34 ([#127](https://github.com/eik-lib/semantic-release/issues/127)) ([2b568be](https://github.com/eik-lib/semantic-release/commit/2b568becb0ce3055beba7dba53c2d6b192679511))
+
 ## [3.0.25](https://github.com/eik-lib/semantic-release/compare/v3.0.24...v3.0.25) (2026-06-15)
 
 
