@@ -1,3 +1,10 @@
+## [3.0.37](https://github.com/eik-lib/semantic-release/compare/v3.0.36...v3.0.37) (2026-10-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency aggregate-error to v5.1.0 ([#144](https://github.com/eik-lib/semantic-release/issues/144)) ([23255ed](https://github.com/eik-lib/semantic-release/commit/23255edcc8c14c41fbadeda5654c86312c4ccdc8))
+
 ## [3.0.36](https://github.com/eik-lib/semantic-release/compare/v3.0.35...v3.0.36) (2026-10-12)
 
 
